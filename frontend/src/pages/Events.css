@@ -1,0 +1,106 @@
+/* Events.css */
+
+/* General Styling for the Events Component */
+.events-control {
+    text-align: center;
+    margin: 2rem auto; /* Space around the whole container */
+    padding: 2rem;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .events-control p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; /* Add more bottom margin for better spacing */
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 2rem; /* Add margin between the button and event cards */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for Events List */
+  .events__list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem; /* Add gap between event cards */
+  }
+  
+  .events__list-items {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .events__list-items:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .events__list-items h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .events__list-items p {
+    margin: 0.2rem 0;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .events__list-items p.price {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .events__list-items p.date {
+    font-style: italic;
+    color: #888;
+  }
+  
+  /* Add spacing to the modal and form */
+  .modal-header, .modal-body, .modal-footer {
+    padding: 1.5rem;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+  }
+  
+  .modal-body .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  }
+  
+  .modal-footer .btn {
+    padding: 0.75rem 1.5rem;
+  }
+  

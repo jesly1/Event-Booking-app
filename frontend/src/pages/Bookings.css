@@ -1,0 +1,81 @@
+/* General Styling for the Bookings Component */
+.bookings-container {
+    text-align: center;
+    margin: 2rem auto; /* Space around the container */
+    padding: 2rem;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.bookings-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem; /* Spacing below the heading */
+    color: #333;
+}
+
+/* Styling for Bookings List */
+.bookings-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem; /* Add gap between booking cards */
+}
+
+/* Individual Booking Items */
+.booking-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.booking-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Booking Title */
+.booking-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #007bff; /* Primary color */
+}
+
+/* Booking Details */
+.booking-item p {
+    margin: 0.2rem 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Specific Price Style */
+.booking-item p.price {
+    font-weight: bold;
+    color: #007bff; /* Primary color */
+}
+
+/* Date Style */
+.booking-item p.date {
+    font-style: italic;
+    color: #888;
+}
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 2rem; /* Add margin between the button and event cards */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
